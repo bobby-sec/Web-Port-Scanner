@@ -36,7 +36,7 @@ if ans=="1":
 elif ans=="2":
     st_p=int(raw_input("Starting Port: "))
     cl_p=int(raw_input("Closing Port: "))
-    for i in range(st_p,cl_p):
+    for i in range(st_p,cl_p+1):
         scan(name,i)
 if len(open_port)==0:
     print "[-]No Open ports found on " +str(name) + "\n[+]Host name is: " + str(tgtName[0]) + "\n[+]Host Ip:"+str(tgtName[2])
